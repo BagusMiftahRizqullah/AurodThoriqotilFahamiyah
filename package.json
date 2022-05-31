@@ -1,0 +1,45 @@
+{
+  "name": "kitabaurodthoriqotilfahamiyah",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "bundle-android": "(react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/)",
+    "release-android": "(cd android && ./gradlew assembleRelease && cd .. && say -v good 'Android rilis') || (cd .. && say -v Bad 'Android Release Failed')",
+    "releaseb-android": "cd android && ./gradlew bundleRelease && cd .. && say -v good 'Android rilis'",
+    "build-android": "cd android && ./gradlew assembleDebug",
+    "bundle-ios": "(react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios && say -v trinoids 'IOS Bundle Done') || say -v Bad 'Bundle IOS Bad'"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.3",
+    "@react-navigation/native": "^6.0.10",
+    "@react-navigation/stack": "^6.2.1",
+    "react": "17.0.2",
+    "react-native": "0.68.1",
+    "react-native-blob-util": "^0.16.0",
+    "react-native-fast-image": "^8.5.11",
+    "react-native-gesture-handler": "^2.4.2",
+    "react-native-pdf": "^6.5.0",
+    "react-native-responsive-screen": "^1.4.2",
+    "react-native-safe-area-context": "^4.2.5",
+    "react-native-screens": "^3.13.1",
+    "react-native-sound": "^0.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/runtime": "^7.17.9",
+    "@react-native-community/eslint-config": "^3.0.1",
+    "babel-jest": "^28.1.0",
+    "eslint": "^8.15.0",
+    "jest": "^28.1.0",
+    "metro-react-native-babel-preset": "^0.70.3",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
