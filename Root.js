@@ -8,6 +8,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 //Screen
 import LaunchScreen from './src/Screen/LaunchScreen/LaunchScreen';
 import Home from './src/Screen/Home/Home';
+import SoundScreen from './src/Screen/SoundScreen/SoundScreen'
 
 
 
@@ -27,6 +28,11 @@ const Root = () => {
                 name="Home"
                 component={Home}
                 options={{headerShown: false}}
+                />
+                    <Stack.Screen
+                name="Sound"
+                component={SoundScreen}
+                options={{headerShown: true}}
                 />
             </Stack.Navigator>
     </NavigationContainer>
