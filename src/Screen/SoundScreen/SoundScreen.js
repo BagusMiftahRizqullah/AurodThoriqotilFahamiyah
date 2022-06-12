@@ -43,18 +43,18 @@ const SoundScreen = () => {
 
 
 
-// useEffect( () => {
-//   async function setupMusic(){
-//     await TrackPlayer.setupPlayer();
-//     await TrackPlayer.add(AllTrack);
-//     const position = await TrackPlayer.getPosition();
-//     const duration = await TrackPlayer.getDuration();
-//     console.log(`${duration - position} seconds left.`);
-//     setTracknOW(duration - position)
-//   }
+useEffect( () => {
+  async function setupMusic(){
+    await TrackPlayer.setupPlayer();
+    await TrackPlayer.add(AllTrack);
+    const position = await TrackPlayer.getPosition();
+    const duration = await TrackPlayer.getDuration();
+    console.log(`${duration - position} seconds left.`);
+    setTracknOW(duration - position)
+  }
 
-//   setupMusic()
-// }, [])
+  setupMusic()
+}, [])
 
 
   // Play the sound with an onEnd callback
@@ -123,7 +123,7 @@ const palyIndex = async(i)=>{
                          {
                           AllTrack?.map((v,i)=>{
                             return (
-                              <View>
+                              <View key={i}>
                                   <TouchableOpacity 
                                   onPress={()=> {setPause(true), palyIndex(i)}}
                                   style={{
