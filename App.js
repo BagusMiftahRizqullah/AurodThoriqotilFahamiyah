@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, AppRegistry } from 'react-native'
 import Root from './Root';
-
+import codePush from "react-native-code-push";
 
 const App = () => {
   return (
@@ -11,6 +11,8 @@ const App = () => {
   )
 }
 
-export default App
+// let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME, installMode: codePush.InstallMode.ON_NEXT_RESUME };
+// Apps = codePush(codePushOptions)(App);
 
-const styles = StyleSheet.create({})
+export default codePush(App);
+// AppRegistry.registerComponent('App', () => Apps);

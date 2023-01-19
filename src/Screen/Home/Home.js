@@ -24,26 +24,33 @@ const AllTrack = [
     artwork: require('@images/Putih.png'),
     no: 3
   },
+  {
+    url: require('../../Assets/RotibulMuhammad.mp3'),
+    title: 'Ratibul Muhammad.mp3',
+    artist: 'Thoriqotil Fahamiyah',
+    artwork: require('@images/HisbulNafsh.png'),
+    no: 9
+  },
 {
   url: require('../../Assets/RotibulMuhammad.mp3'),
   title: 'Ratibul Muhammad.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/ratibulMuhammad.png'),
-  no: 9
+  no: 11
 },
 {
   url: require('../../Assets/MaulidulMuhammad.mp3'),
   title: 'Maulidul Muhammad.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/Hijau.png'),
-  no: 28
+  no: 30
 },
 {
   url: require('../../Assets/MaulidulMuhammad.mp3'),
   title: 'Maulidul Muhammad.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/maulidulMuhammad.png'),
-  no: 35
+  no: 37
 },
 {
 
@@ -51,7 +58,7 @@ const AllTrack = [
   title: 'Manaqib.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/manaqib.png'),
-  no: 54
+  no: 56
 },
 
 ]
@@ -102,7 +109,7 @@ const AllTrack = [
                       fontSize: 18, 
                       alignSelf:'center'
                     }}>
-                      {`Halaman ${num}`}
+                      Pilih Halaman
                     </Text>
                 </TouchableOpacity>     
                 <TouchableOpacity style={{  alignSelf:'flex-end'}} onPress={()=> setList(!list)}>  
@@ -180,15 +187,15 @@ const AllTrack = [
             }} 
             onPress={()=>{
               setModalVisible(false),
-              Linking.openURL('vnd.youtube://channel/UC-AG51afpJqArDqS_8QzbEA').then(supported => {
+              Linking.openURL('vnd.youtube://channel/UC3UJLpCAbZ6L6bJuhj5SAnQ').then(supported => {
                 if (supported) {
-                  return Linking.openURL('vnd.youtube://channel/UC-AG51afpJqArDqS_8QzbEA');
+                  return Linking.openURL('vnd.youtube://channel/UC3UJLpCAbZ6L6bJuhj5SAnQ');
               } else {
-                  return Linking.openURL('https://www.youtube.com/channel/UC-AG51afpJqArDqS_8QzbEA');
+                  return Linking.openURL('https://www.youtube.com/channel/UC3UJLpCAbZ6L6bJuhj5SAnQ');
               }
               }).catch((err)=>{
                 console.log("errr", err),
-                Linking.openURL('https://www.youtube.com/channel/UC-AG51afpJqArDqS_8QzbEA');
+                Linking.openURL('https://www.youtube.com/channel/UC3UJLpCAbZ6L6bJuhj5SAnQ');
               })
             } 
              

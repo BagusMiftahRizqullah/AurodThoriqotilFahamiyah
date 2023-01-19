@@ -83,6 +83,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -138,10 +139,10 @@ android {
         applicationId "com.kitabaurodthoriqotilfahamiyah"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 9
-        versionName "1.8"
+        versionCode 10
+        versionName "1.9"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
-
+        resValue 'string', "CODE_PUSH_APK_BUILD_TIME", String.format("\"%d\"", System.currentTimeMillis())
         if (isNewArchitectureEnabled()) {
             // We configure the NDK build only if you decide to opt-in for the New Architecture.
             externalNativeBuild {
@@ -170,6 +171,8 @@ android {
                 }
             }
         }
+
+       
     }
 
     if (isNewArchitectureEnabled()) {
@@ -230,9 +233,9 @@ android {
         }
 
           release {
-            storeFile file('./kitab.keystore')
+            storeFile file('./keystore.jks')
             storePassword 'kitab123'
-            keyAlias = 'kitab'
+            keyAlias = 'upload'
             keyPassword 'kitab123'
         }
     }
