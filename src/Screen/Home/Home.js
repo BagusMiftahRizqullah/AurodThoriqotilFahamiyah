@@ -36,21 +36,21 @@ const AllTrack = [
   title: 'Ratibul Muhammad.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/ratibulMuhammad.png'),
-  no: 11
+  no: 13
 },
 {
   url: require('../../Assets/MaulidulMuhammad.mp3'),
   title: 'Maulidul Muhammad.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/Hijau.png'),
-  no: 30
+  no: 32
 },
 {
   url: require('../../Assets/MaulidulMuhammad.mp3'),
   title: 'Maulidul Muhammad.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/maulidulMuhammad.png'),
-  no: 37
+  no: 39
 },
 {
 
@@ -58,7 +58,7 @@ const AllTrack = [
   title: 'Manaqib.mp3',
   artist: 'Thoriqotil Fahamiyah',
   artwork: require('@images/manaqib.png'),
-  no: 56
+  no: 58
 },
 
 ]
