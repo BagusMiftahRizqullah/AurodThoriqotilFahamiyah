@@ -44,7 +44,7 @@ const SoundScreen = () => {
       artwork: require('@images/DoaFathimah.png'),
     },
     {
-      url: require('../../Assets/ShalawatMukafah.mp3'),
+      url: require('../../Assets/ShalawatMukafaah.mp3'),
       title: 'Shalawat Mukafaah.mp3',
       artist: 'Thoriqoh Fahamiyah',
       artwork: require('@images/ShalawatMukafah.png'),
