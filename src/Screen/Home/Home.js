@@ -75,6 +75,13 @@ const Home = props => {
       artwork: require('@images/DoaFathimah.png'),
       no: 100,
     },
+    {
+      url: require('../../Assets/DoaFathimah.mp3'),
+      title: 'Doa Muzamil.mp3',
+      artist: 'Thoriqotil Fahamiyah',
+      artwork: require('@images/DoaMuzamil.png'),
+      no: 103,
+    },
   ];
 
   return (
