@@ -15,13 +15,13 @@
     "bundle-ios": "(react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios && say -v trinoids 'IOS Bundle Done') || say -v Bad 'Bundle IOS Bad'"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.22.15",
     "@react-native-async-storage/async-storage": "^1.17.3",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/stack": "^6.2.1",
     "react": "17.0.2",
     "react-native": "0.68.1",
     "react-native-blob-util": "^0.16.0",
-    "react-native-code-push": "^7.0.5",
     "react-native-fast-image": "^8.5.11",
     "react-native-gesture-handler": "^2.4.2",
     "react-native-pdf": "^6.5.0",
