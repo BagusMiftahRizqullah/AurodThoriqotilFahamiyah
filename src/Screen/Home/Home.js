@@ -41,11 +41,25 @@ const Home = props => {
       no: 10,
     },
     {
+      url: null,
+      title: 'Surah Ya-sin.mp3',
+      artist: 'Thoriqotil Fahamiyah',
+      artwork: require('@images/Yasin.png'),
+      no: 14,
+    },
+    {
       url: require('../../Assets/RotibulMuhammad.mp3'),
       title: 'Ratibul Muhammad.mp3',
       artist: 'Thoriqotil Fahamiyah',
       artwork: require('@images/ratibulMuhammad.png'),
       no: 27,
+    },
+    {
+      url: null,
+      title: 'Surah Al-Waqiah.mp3',
+      artist: 'Thoriqotil Fahamiyah',
+      artwork: require('@images/Alwaqiah.png'),
+      no: 46,
     },
     {
       url: require('../../Assets/MaulidulMuhammad.mp3'),
@@ -67,6 +81,13 @@ const Home = props => {
       artist: 'Thoriqotil Fahamiyah',
       artwork: require('@images/manaqib.png'),
       no: 81,
+    },
+    {
+      url: null,
+      title: 'Surah Al-Mulk.mp3',
+      artist: 'Thoriqotil Fahamiyah',
+      artwork: require('@images/AlMulk.png'),
+      no: 123,
     },
     {
       url: require('../../Assets/DoaFathimah.mp3'),
